@@ -29,7 +29,7 @@ You will change this junior code in expert code!
 + Visual Studio Code(HTML, CSS, JS, PHP)
 + https://www.php.net/
 + https://phptherightway.com/
-+ https://www.youtube.com/playlist?list=PL0eyrZgxdwhxhsuT_QAqfi-NNVAlV4WIP
++ https://rollbar.com/guides/how-to-debug-php/
 
 
 ## Author :black_nib:
