@@ -50,48 +50,50 @@ for ($i = 0; $i <= 25; $i++) {
 
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
 
-// new_exercise(6);
-// // === Final exercise ===
-// // The fixed code should echo the following at the bottom:
-// // Here is the name: $name - $name2
-// // $name variables are randomly combined as seen in the code, fix all the bugs whilst keeping the functionality!
-// // Examples: captain strange, ant widow, iron man, ...
-// $arr = [];
+new_exercise(6);
+// === Final exercise ===
+// The fixed code should echo the following at the bottom:
+// Here is the name: $name - $name2
+// $name variables are randomly combined as seen in the code, fix all the bugs whilst keeping the functionality!
+// Examples: captain strange, ant widow, iron man, ...
+$arr = [];
 
 
-// function combineNames($str1 = "", $str2 = "") {
-//     $params = [$str1, $str2];
-//     foreach($params as $param) {
-//         if ($param == "") {
-//             $result = randomHeroName();
-//         }
-//     }
-//    return implode(" - ",$result);
-// }
+function combineNames($str1 = "", $str2 = "")
+{
+    $params = [$str1, $str2];
+    foreach ($params as $param) {
+        if ($param == "") {
+            $result = randomHeroName();
+        }
+    }
+    return implode(" - ", $result);
+}
 
 
-// function randomGenerate($arr, $amount) {
-//     for ($i = $amount; $i > 0; $i--) {
-//         array_push($arr, randomHeroName());
-//     }
+function randomGenerate($arr, $amount)
+{
+    for ($i = $amount; $i > 0; $i--) {
+        array_push($arr, randomHeroName());
+    }
 
-//     return $amount;
-// }
+    return $amount;
+}
 
-// function randomHeroName()
-// {
-//     $hero_firstnames = ["captain", "doctor", "iron", "Hank", "ant", "Wasp", "the", "Hawk", "Spider", "Black", "Carol"];
-//     $hero_lastnames = ["America", "Strange", "man", "Pym", "girl", "hulk", "eye", "widow", "panther", "daredevil", "marvel"]
-//     $heroes = [$hero_firstnames, $hero_lastnames];
-//     $firstname = $heroes [0] [rand(0,10)];
-//     $lastname = $heroes [1] [rand(0,10)];
-//     //$randname = $heroes[rand(0,count($heroes))][rand(0, 10)];
+function randomHeroName()
+{
+    $hero_firstnames = ["captain", "doctor", "iron", "Hank", "ant", "Wasp", "the", "Hawk", "Spider", "Black", "Carol"];
+    $hero_lastnames = ["America", "Strange", "man", "Pym", "girl", "hulk", "eye", "widow", "panther", "daredevil", "marvel"];
+    $heroes = [$hero_firstnames, $hero_lastnames];
+    $firstname = $heroes[0][rand(0, 10)];
+    $lastname = $heroes[1][rand(0, 10)];
+    //$randname = $heroes[rand(0,count($heroes))][rand(0, 10)];
 
-//    // echo $randname;
-//    return [$firstname, $lastname];
-// }
+    // echo $randname;
+    return [$firstname, $lastname];
+}
 
-// echo ("Here is the name: " . combineNames());
+echo ("Here is the name: " . combineNames());
 
 
 new_exercise(7);
